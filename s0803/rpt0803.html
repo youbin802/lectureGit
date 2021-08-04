@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0103박유빈</title>
+    <style>
+        .content {
+            display: grid;
+            gap:10px;
+            grid-template-columns: repeat(4,1fr);
+        }
+        .content > div {
+            padding:10px;
+            border:1px solid rgba(238, 154, 45, 0.616);
+        }
+        .headText > *{
+            color:rgba(218, 142, 42, 0.808);
+        }
+    </style>
+</head>
+<body>
+    <h2 style="color: rgb(238, 155, 45); text-align: center;">HTML 태그 속성 종류</h2>
+    <div class="content">
+        <div>
+            <div>div   : 컨텐츠 묶을 때 사용</div>
+            <span>span : div와 동일 (차이점 : 줄 바꿈 X )</span>
+        </div>
+        <div class="headText">
+            <h1>This is heading 1</h1>
+            <h2>This is heading 2</h2>
+            <h3>This is heading 3</h3>
+            <h4>This is heading 4</h4>
+            <h5>This is heading 5</h5>
+            <h6>This is heading 6</h6>
+        </div>
+        <div>   
+            <ul>
+                <a href="https://www.naver.com">웹 페이지, 외부 사이트 연결</a>
+                <p>a 태그 속성</p>
+                <li>_blank  : 새로운 탭 or 창</li>
+                <li>_self   : 현재 탭 or 창</li>
+                <li>_parent : 화면 불러낸 부모 탭 or 창</li>
+                <li>_top    : 최상위 탭 or 창</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <input type="text" value="input 태그 설명">
+                <p>input 태그 속성</p>
+                <li>readonly  : 읽기 전용 필드</li>
+                <li>max/min   : 최대값/최소값 지정</li>
+                <li>maxLength : 최대 문자 개수 지정</li>
+                <li>required  : 필수 입력 필드 지정(빈칸이면 안 넘어감)</li>
+            </ul>
+        </div>
+        <div>
+            <p>이미지 태그</p>
+            <img src="./img.png" alt="naver.com" width="80%" height="80%">
+        </div>
+        <div>
+            <nav>
+                <ol>
+                <li>ol은 숫자 태그</li>
+                <li>오늘은 8월 3일</li>
+                </ol>
+            </nav>
+        </div>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>표 제목</th>
+                    </tr>
+                </thead>
+                    <tr>
+                        <td>요소1</td>
+                        <td rowspan="2"> 테이블 태그 속성 rowspan</td>
+                    </tr>
+                <tfoot>
+                <tr>
+                    <td>요소2</td>
+                    <td colspan="3"> 테이블 태그 속성 colspan</td>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div>
+        <p>유튜브 추가</p>
+        <p>자동재생 : src 주소 맨 뒤에 "?autoplay=1&mute=1" 붙이기</p>
+        <iframe width="100%" height="315" 
+        src="https://www.youtube.com/embed/RZrqrinmdks?autoplay=1&mute=1" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+        gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>   
+</div>
+</body>
+</html>
