@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    padding: 10px;
+    background-color: aqua;
+}
+
+nav {
+    overflow: hidden;
+    background-color: cadetblue;
+}
+
+nav a {
+    float: left;
+    display:block;
+    padding: 20px;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px 0;
+    background-color: coral;
+}
+
+section p {
+    float: left;
+    width: calc(100% / 3);
+    margin: 0;
+    padding: 10px;
+    height: 200px;
+}
+
+footer {
+    padding: 8px;
+    background-color: darkgoldenrod;
+}

@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    padding: 10px;
+    background-color: aqua;
+}
+
+nav {
+    overflow: hidden;
+    background-color: cadetblue;
+}
+
+nav a {
+    float: left;
+    display:block;
+    padding: 20px;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px 0;
+    background-color: coral;
+    padding-bottom: 0;
+}
+section div {
+    display: flex;
+}
+section p {
+    flex: 1;
+    margin: 0;
+    padding: 10px;
+    height: 200px;
+}
+
+@media(max-width:600px) {
+    section p {
+        width: 100%;
+    }
+    p.float {
+        width: 100%;
+    }
+}
+
+footer {
+    padding: 8px;
+    background-color: darkgoldenrod;
+}
