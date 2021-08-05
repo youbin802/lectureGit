@@ -1,0 +1,34 @@
+* {
+    margin:0;
+}
+
+body > * {
+    padding:10px;
+}
+
+section {
+    padding:20px 0;
+    background-color: coral;
+    margin-bottom: 50px;
+}
+
+section p {
+    float: left;
+    width:30.75%;
+    margin:0;
+    padding:10px;
+    height:200px;
+}
+
+
+@media(max-width:600px) {
+    section p {
+        width:100%;
+    }
+}
+
+footer {
+    clear: both;
+    padding:10px;
+    background-color: #ddd;
+}
